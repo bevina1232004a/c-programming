@@ -1,0 +1,20 @@
+#include <stdio.h>  
+void main()  
+{  
+    int i, j, r,k;  
+    printf (" Enter a number to define the rows: \n ");  
+    scanf("%d", &r);  
+    printf("\n");
+    for(i=1;i<=r;i++)
+    {
+        for(j=i;j<=r-1;j++)
+        {
+            printf(" ");
+        }
+        for(k=1;k<=(2*i-1);k++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
